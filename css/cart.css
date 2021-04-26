@@ -1,0 +1,213 @@
+.container {
+    max-width: 1015px;
+    text-align: center;
+}
+
+/* Banner section goes here */
+
+.banner {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+    /*Specific colour goes here*/
+    color: crimson;
+}
+
+.banner_title {
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*SEARCHBAR HERE*/
+
+.search {
+    overflow: hidden;
+    background-color: #e9e9e8;
+}
+
+/*Change the style of the links inside the nav bar */
+
+.search a {
+    float: left;
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*Change the colour of the links on hover */
+
+.search a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*Change active style element to highlight the current page */
+
+.search a.active {
+    background-color: orangered;
+    color: white;
+}
+
+/*Change the style of the search box inside the nav bar */
+
+.search input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8x;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* This applies only to the banner search-bar!
+When the screen is less than 600px wide, stack the links and the search 
+field vertically instead of horizontally */
+
+@media screen and (max-width: 600px) {
+    .search a, .search input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .search input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+/*Padding on top of the searchbar to make it centered*/
+
+.padding_top {
+    margin-top: 7px;
+}
+
+/**********************************Images section is below**********************************************/
+
+.header {
+    position: relative;
+    display: inline-block;
+}
+
+/*Common elements for the titles in each image */
+
+/*transform/translate*/
+
+.center_title, .button, .dropdown {
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/*font size for purchase info*/
+
+.bottom_left_title, .bottom_left_cart {
+    font-size: 15px;
+}
+
+.center_title {
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+}
+
+.bottom_left_title {
+    top: 70%;
+    left: 10%;
+}
+
+/**********************Dropdown Menu***********************/
+
+.dropdown {
+    top: 50%;
+    left: 10%;
+    z-index: 9;
+}
+
+.dropdown_options {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    background-color: #f1f1f1;
+}
+
+.dropdown_options a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+/*set colour of links on hover*/
+
+.dropdown_options a:hover {
+    background-color: #ddd;
+}
+
+/*Show the menu on hover*/
+
+.dropdown:hover .dropdown_options {
+    display: block;
+}
+
+/*Change the background colour of the dropdown button when it is active */
+
+.dropdown:hover .sort {
+    background-color: greenyellow
+}
+
+/*******************************The grid section is below************************************/
+
+.list_container {
+    display: grid;
+    grid-template-columns: 7% 15% auto 10% 13% 18% 0%;
+    border-bottom: 1px solid black;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    text-align: left;
+}
+
+.description {
+    font-style: italic;
+}
+
+.cart_wrapper, .description, .prod_title, .price {
+    padding-top: 3%;
+}
+
+.prod_title {
+    position: relative;
+    top: 29%;
+}
+
+.description {
+    position: relative;
+    top: 20%;
+}
+
+.price {
+    position: relative;
+    top: 25%;
+}
+
+.rating {
+    position: relative;
+    top: 32%;
+}
+
+.cart_wrapper {
+    margin-top: 7%;
+}
+
+.checked {
+    color: orange;
+}
+
+/**************Other Elements***************/

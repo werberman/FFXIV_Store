@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Castrum Marinum</title>
+    <link rel="stylesheet" href="../css/current_content/castrum_marinum.css">
+    <!-- Font Awesome Icon Library (as suggested on w3school)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <!--Main banner goes here-->
+        <div class="banner">
+            <img src="../imgs/castrum_marinum_extreme.jpg" style="max-width: 100%;">
+            <div class="banner_title">Castrum Marinum</div>
+        </div>
+
+        <!--Searchbar goes here-->
+        <div class="search">
+            <a href="../main_page.php">Home</a>
+            <a href="../Contact_Info.php">Contact Us</a>
+            <a href="../Cart.html">Your Cart</a>
+            <a class="active">Castrum Marinum</a>
+            <form name="searchForm" action="../search_results.php">
+                <input name="searchInp" class="padding_top" type="text" placeholder="Search...">
+            </form>
+        </div>
+
+        <!--Only works if botton type rather than button class------------------------------------------------------------------------------------>
+        <div class="add_all_button">
+            <button type="button">Add Everything to Cart</button>
+        </div>
+
+
+        <p>Filler text lalalalala</p>
+
+        <!--This section will contain images of the various stages of the
+    fight. No links required-->
+
+        <div class="images">
+            <img src="https://via.placeholder.com/1015x100">
+            <div class="center_title">Emerald Weapon (10x Castrum Marinum Runs)</div>
+            <div class="bottom_left_title">~USD$200.00</div>
+            <button class="bottom_left_cart">Add to Cart</button>
+            <div class="quantity_selector">
+                <input type="number" id="quantity" name="quantity" min="1" size="2">
+            </div>
+            <!--This will give the basic layout of the future rating system-->
+            <div class="raiting">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </div>
+
+        <div class="images">
+            <img src="../imgs/castrum_marinum_mount.png">
+            <div class="center_title">Mount</div>
+            <div class="bottom_left_title">~USD$300.00</div>
+            <button class="bottom_left_cart">Add to Cart</button>
+            <div class="quantity_selector">
+                <input type="number" id="quantity" name="quantity" min="1" size="2">
+            </div>
+            <!--This will give the basic layout of the future rating system-->
+            <div class="raiting">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

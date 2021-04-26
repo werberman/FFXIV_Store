@@ -1,0 +1,14 @@
+There is only one team member for this assignment:
+Kristopher Houston
+Student ID: 041015388
+
+PLEASE NOTE:
+
+The current pages that are to be viewed are: 
+Home
+e9s-e12s,
+Cart,
+Search (accessed by hitting enter when the search field is selected, regardless of input [or lack thereof]).
+
+NO OTHER PAGES HAVE BEEN UPDATED FOR THIS ASSIGNMENT
+The project was needlessly large, but for simplicity sake I have kept them in place rather than replace them with dummy values.

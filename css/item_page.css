@@ -1,0 +1,9 @@
+.item_page_image {
+    max-width: 100%;
+    height: auto;
+}
+
+.item_page {
+    max-width: 350px;
+    margin: auto;
+}

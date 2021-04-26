@@ -1,0 +1,54 @@
+
+/**********************Dropdown Menu***********************/
+
+.s-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+
+  }
+
+.bkg-img {
+    background-image: url("https://via.placeholder.com/1015x50");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.dropdown {
+    z-index: 9;
+}
+
+.dropdown_filter {
+    /* top: 50%;
+    right: 10%; */
+    z-index: 9;
+}
+
+.dropdown_options {
+    display: none;
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.3);
+    background-color: #f1f1f1;
+    color: black;
+}
+
+/*set colour of links on hover*/
+
+.dropdown_options a:hover {
+    background-color: #ddd;
+}
+
+/*Show the menu on hover*/
+
+.dropdown:hover .dropdown_options {
+    display: block;
+}
+
+/*Change the background colour of the dropdown button when it is active */
+
+.dropdown:hover .sort {
+    background-color: greenyellow
+}

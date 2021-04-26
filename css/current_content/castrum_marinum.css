@@ -1,0 +1,158 @@
+body {
+    background-color: rgba(42,42,46,1);
+}
+
+.container {
+    max-width: 1015px;
+    text-align: center;
+    margin: auto;
+}
+
+/* Banner section goes here */
+.banner {
+    position: relative;
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+    /*Specific colour goes here*/
+    color: rgb(25, 190, 25);
+    max-width: 1015px;
+    max-height: 150px;
+}
+
+.banner_title {
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*SEARCHBAR HERE*/
+.search {
+    overflow: hidden;
+    background-color: #e9e9e8;
+}
+
+/*Change the style of the links inside the nav bar */
+.search a {
+    float: left;
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/*Change the colour of the links on hover */
+.search a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*Change active style element to highlight the current page */
+.search a.active {
+    background-color: orangered;
+    color: white;
+}
+
+/*Change the style of the search box inside the nav bar */
+.search input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8x;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* This applies only to the banner search-bar!
+When the screen is less than 600px wide, stack the links and the search 
+field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+
+    .search a,
+    .search input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .search input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+/*Padding on top of the searchbar to make it centered*/
+.padding_top {
+    margin-top: 7px;
+}
+
+.add_all_button {
+    text-align: left;
+}
+
+
+/**********************************Images section is below**********************************************/
+
+.images {
+    position:relative;
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-left: 0px;
+    max-width: 1015px;
+    max-height: 125px;
+}
+
+/*Common elements for the titles in each image */
+/*transform/translate*/
+.center_title,
+.bottom_left_title,
+.bottom_left_cart,
+.button,
+.raiting,
+.quantity_selector {
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/*font size for purchase info*/
+.bottom_left_title,
+.bottom_left_cart {
+    font-size: 15px;
+}
+
+.center_title {
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+}
+
+.bottom_left_title {
+    top: 70%;
+    left: 10%;
+}
+
+.bottom_left_cart {
+    top: 50%;
+    left: 10%;
+}
+
+.quantity_selector {
+    top: 50%;
+    left: 3%;
+}
+
+.checked {
+    color: orange;
+}
+
+.raiting {
+    top: 50%;
+    left: 90%;
+}

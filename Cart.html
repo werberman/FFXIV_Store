@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Your Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <!-- Font Awesome Icon Library (as suggested on w3school)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Cart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!--Main banner goes here-->
+        <div class="banner">
+            <img src="https://via.placeholder.com/1015x100">
+            <div class="banner_title">Your Cart</div>
+        </div>
+
+        <!--Searchbar goes here-->
+        <div class="search">
+            <a href="main_page.php">Home</a>
+            <a href="Contact_Info.php">Contact Us</a>
+            <a class="active" href="Cart.html">Your Cart</a>
+            <form name="searchForm" action="search_results.php">
+                <input name="searchInp" class="padding_top" type="text" placeholder="Search...">
+            </form>
+        </div>
+
+        <p> This is the cart</p>
+
+        <!--This section will contain images of the various stages of the
+    fight. No links required-->
+
+        <div class="header">
+            <img src="https://via.placeholder.com/1015x50">
+            <!--Search terms used for the search will go in the banner below-->
+            <div class="center_title" id="center_title">Your Cart</div>
+            <div class="dropdown">
+                <button class="sort">Sort By...</button>
+                <div class="dropdown_options">
+                    <a href="javascript:sort('plh');">Price (High-Low)</a>
+                    <a href="javascript:sort('phl');">Price (Low-High)</a>
+                    <a href="javascript:sort('naz');">Name (A-Z)</a>
+                    <a href="javascript:sort('nza');">Name (Z-A)</a>
+                    <a href="javascript:sort('rlh');">Raiting (Low-High)</a>
+                    <a href="javascript:sort('rhl');">Raiting (High-Low)</a>
+                </div>
+            </div>
+        </div>
+
+        <div id='template'></div>
+        <!-- <div class="list_container">
+            <img src="https://via.placeholder.com/50x50">
+            <div class="description">Example1</div>
+          
+            <div class="raiting">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <span class="cart_wrapper">
+                <span class="quantity_selector">
+                    <input type="number" id="quantity" name="quantity" min="1" size="2">
+                </span>
+                <button type="add_to_cart">Remove from Cart</button>
+            </span>
+        </div> -->
+
+    </div>
+
+</body>
+
+</html>
